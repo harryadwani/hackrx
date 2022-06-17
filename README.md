@@ -8,9 +8,9 @@ If you have a different version of python installed, install python 3.8 from Mic
 
 
 Use these commands to know your python executable installation location if needed
->>> import os
->>> import sys
->>> os.path.dirname(sys.executable)
+import os
+import sys
+os.path.dirname(sys.executable)
 'C:\\Python25'
 
 Commands to set up environment - 
@@ -18,9 +18,9 @@ Commands to set up environment -
 python -m virtualenv -p <path to python 3.8 executable> hackrx_env
 
 Use these commands to know your python executable installation location if needed - 
->>> import os
->>> import sys
->>> os.path.dirname(sys.executable)
+import os
+import sys
+os.path.dirname(sys.executable)
 'C:\\Python25'
 
 In my case command is - 
@@ -38,5 +38,5 @@ python app.py #to run the app
 
 
 
-#run '>>> deactivate'
+#run command 'deactivate'
 #to deactivate the environment if ever needed
