@@ -4,6 +4,7 @@ Provider Invoice Text Curation
 Project uses python 3.8 and gitbash as terminal (windows 10)
 
 Using virtualenv to isolate python packages.
+Short and nice tutorial to virtualenv - https://www.youtube.com/watch?v=N5vscPTWKOk&ab_channel=CoreySchafer
 If you have a different version of python installed, install python 3.8 from Microsoft store.
 
 Commands to set up environment - 
