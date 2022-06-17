@@ -40,3 +40,8 @@ MAKE SURE TO UPDATE PYTHON PACKAGES DEPENDENCIES FILE WHEN YOU ADD A NEW PACKAGE
 pip freeze --local > requirements.txt 
 
 
+------------------------------------------------------------
+
+When setup is done and starting the project at a later time, make sure to cd into Environments folder and activate environment using- \
+
+source hackrx_env/Scripts/activate
