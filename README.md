@@ -6,13 +6,6 @@ Project uses python 3.8 and gitbash as terminal (windows 10)
 Using virtualenv to isolate python packages.
 If you have a different version of python installed, install python 3.8 from Microsoft store.
 
-
-Use these commands to know your python executable installation location if needed \
-import os \
-import sys \
-os.path.dirname(sys.executable) \
-
-
 Commands to set up environment - 
 (make sure you are in Environments folder in terminal)- \
 python -m virtualenv -p <path to python 3.8 executable> hackrx_env 
@@ -20,7 +13,7 @@ python -m virtualenv -p <path to python 3.8 executable> hackrx_env
 Use these commands to know your python executable installation location if needed - \
 import os \
 import sys \
-os.path.dirname(sys.executable) \
+os.path.dirname(sys.executable) 
 
 
 In my case command is - \
