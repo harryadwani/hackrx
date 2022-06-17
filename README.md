@@ -11,30 +11,30 @@ Use these commands to know your python executable installation location if neede
 import os \
 import sys \
 os.path.dirname(sys.executable) \
-'C:\\Python25' \
+'C:\\Python25' 
 
 Commands to set up environment - 
 (make sure you are in Environments folder in terminal)- \
-python -m virtualenv -p <path to python 3.8 executable> hackrx_env \
+python -m virtualenv -p <path to python 3.8 executable> hackrx_env 
 
 Use these commands to know your python executable installation location if needed - \
 import os \
 import sys \
 os.path.dirname(sys.executable) \
-'C:\\Python25' \
+'C:\\Python25' 
 
 In my case command is - \
-python -m virtualenv -p  C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python3.8.exe hackrx_env \
+python -m virtualenv -p  C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python3.8.exe hackrx_env 
 
 Then - \
-source hackrx_env/Scripts/activate #to activate the environment \
+source hackrx_env/Scripts/activate #to activate the environment 
 
 Then - \
 pip install Flask \
-pip install virtualenv \
+pip install virtualenv 
 
 Then - \
-python app.py #to run the app \
+python app.py #to run the app 
 
 
 
