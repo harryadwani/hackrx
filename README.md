@@ -8,6 +8,7 @@ If you have a different version of python installed, install python 3.8 from Mic
 
 Commands to set up environment - 
 (make sure you are in Environments folder in terminal)- \
+pip install virtualenv \
 python -m virtualenv -p <path to python 3.8 executable> hackrx_env 
 
 Use these commands to know your python executable installation location if needed - \
@@ -24,7 +25,7 @@ source hackrx_env/Scripts/activate #to activate the environment
 
 Then - \
 pip install Flask \
-pip install virtualenv 
+
 
 Then - \
 python app.py #to run the app 
@@ -33,3 +34,7 @@ python app.py #to run the app
 
 #run command 'deactivate'
 #to deactivate the environment if ever needed
+
+MAKE SURE TO UPDATE PYTHON PACKAGES REQUIREMENTS FILE WHEN YOU ADD A NEW PACKAGE using \
+pip freeze --local > requirements.txt \
+pip install -r requirements.txt #to install required dependencies
