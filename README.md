@@ -11,7 +11,7 @@ Use these commands to know your python executable installation location if neede
 import os \
 import sys \
 os.path.dirname(sys.executable) \
-'C:\\Python25' 
+
 
 Commands to set up environment - 
 (make sure you are in Environments folder in terminal)- \
@@ -21,7 +21,7 @@ Use these commands to know your python executable installation location if neede
 import os \
 import sys \
 os.path.dirname(sys.executable) \
-'C:\\Python25' 
+
 
 In my case command is - \
 python -m virtualenv -p  C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python3.8.exe hackrx_env 
