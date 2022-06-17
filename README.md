@@ -42,6 +42,6 @@ pip freeze --local > requirements.txt
 
 ------------------------------------------------------------
 
-When setup is done and starting the project at a later time, make sure to cd into Environments folder and activate environment using- \
+When setup is done and starting the project at a later time, make sure to cd into Environments folder and activate environment using- 
 
 source hackrx_env/Scripts/activate
