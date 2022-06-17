@@ -32,9 +32,10 @@ Then -
 ### `python app.py` 
 to run the app 
 
+\
+\
 
-
-#run command 
+run command 
 ### `deactivate`
 to deactivate the environment if ever needed
 
