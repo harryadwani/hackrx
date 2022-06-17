@@ -33,11 +33,13 @@ Then -
 to run the app 
 
 \
-\
+
 
 run command 
 ### `deactivate`
 to deactivate the environment if ever needed
+
+\
 
 MAKE SURE TO UPDATE PYTHON PACKAGES DEPENDENCIES FILE WHEN YOU ADD A NEW PACKAGE using 
 ### `pip freeze --local > requirements.txt `
