@@ -24,7 +24,7 @@ Then - \
 source hackrx_env/Scripts/activate #to activate the environment 
 
 Then - \
-pip install Flask \
+pip install -r requirements.txt #to install required dependencies
 
 
 Then - \
@@ -35,6 +35,7 @@ python app.py #to run the app
 #run command 'deactivate'
 #to deactivate the environment if ever needed
 
-MAKE SURE TO UPDATE PYTHON PACKAGES REQUIREMENTS FILE WHEN YOU ADD A NEW PACKAGE using \
+MAKE SURE TO UPDATE PYTHON PACKAGES DEPENDENCIES FILE WHEN YOU ADD A NEW PACKAGE using \
 pip freeze --local > requirements.txt \
-pip install -r requirements.txt #to install required dependencies
+
+
