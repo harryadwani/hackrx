@@ -9,17 +9,16 @@ from werkzeug.utils import secure_filename
 # current module (__name__) as argument.
 app = Flask(__name__)
 
+#files will be uploaded to server in this folder
 UPLOAD_FOLDER = 'static/uploads/'
  
 app.secret_key = "secret key"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 #max 16 mb file upload
  
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif', 'pdf'])
  
 def allowed_file(filename):
-    app.logger.info(filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS)
-    app.logger.info('.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS)
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
   
@@ -27,12 +26,15 @@ def allowed_file(filename):
 # which tells the application which URL should call 
 # the associated function.
 
+#index
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
 
+#upload endpoint
 @app.route('/upload', methods=['POST'])
 def upload_image():
+    app.logger.info(request.url)
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
@@ -54,10 +56,24 @@ def upload_image():
         flash('Allowed image types are - png, jpg, jpeg, gif, pdf')
         return redirect(request.url)
  
+#to display uploaded image in frontend if required  
 @app.route('/display/<filename>')
 def display_image(filename):
     #print('display_image filename: ' + filename)
     return redirect(url_for('static', filename='uploads/' + filename), code=301)
+
+#sample form to demonstrate form upload to server
+@app.route('/info')  
+def info():  
+   return render_template('info.html')  
+
+#sample form posted to this endpoint
+#to demo how data sent to server can be processed and sent back to frontend
+@app.route('/success',methods = ['POST', 'GET'])  
+def print_data():  
+   if request.method == 'POST':  
+      result = request.form  
+      return render_template("result_data.html",result = result) 
   
 # main driver function
 if __name__ == '__main__':
