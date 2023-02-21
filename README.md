@@ -1,4 +1,6 @@
-# hackrx
+# hackrx 3.0 Hackathon!
+Problem statement - Implement a provider invoice text extraction to identify provider (hospital/Dr./laboratory) names & other critical information tags (AI,ML, Computer Vision, Python-Flask for backend. 
+
 Provider Invoice Text Curation
 
 Project uses python 3.8 and gitbash as terminal (windows 10)
